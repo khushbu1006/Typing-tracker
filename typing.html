@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <!-- Home Page -->
+  <div class="home-page" id="home-page">
+    <h1>Welcome to the Typing Speed Test</h1>
+    <button id="startButton">Start Test</button>
+  </div>
+
+  <!-- Typing Test Page -->
+  <div class="typing-page hidden" id="typing-page">
+    <h1>Typing Speed Test</h1>
+    <div id="settings">
+      <label for="timer">Test Duration:</label>
+      <select id="timer">
+        <option value="1">1 Minute</option>
+        <option value="2">2 Minutes</option>
+        <option value="3">3 Minutes</option>
+        <option value="4">4 Minutes</option>
+        <option value="5">5 Minutes</option>
+        <option value="1">1 hour</option>
+        <option value="2">2 hours</option>
+
+      </select>
+      <button id="startTestButton">Start Test</button>
+    </div>
+    <div id="test" class="hidden">
+      <p id="displayText">The quick brown fox jumps over the lazy dog.</p>
+      <textarea id="inputText" placeholder="Start typing here..." disabled></textarea>
+      <div id="stats">
+        <p>Time Left: <span id="timeLeft">0:00</span></p>
+        <p>WPM: <span id="wpm">0</span></p>
+        <p>Accuracy: <span id="accuracy">0%</span></p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="result-page hidden" id="result-page">
+   
+    <h2>Test Results</h2>
+    <p>WPM: <span id="finalWpm">0</span></p>
+    <p>Accuracy: <span id="finalAccuracy">0%</span></p>
+    <button id="retryButton">Retry</button>
+    <button id="viewHistoryButton">View Test History</button>
+  </div>
+</div>
+
+  <script src="typing1.js"></script>
+</body>
+</html>
